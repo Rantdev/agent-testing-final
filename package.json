@@ -1,0 +1,12 @@
+{
+  "name": "agent-test-bench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test page for two Sarvam voice agents",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
