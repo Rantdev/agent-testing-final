@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>Sarvam Voice Agent Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Sarvam Voice Agent Lab home"><span class="brand-mark">S</span><span>Sarvam <span class="brand-light">Voice Lab</span></span></a>
+      <div class="topbar-status"><span class="live-dot"></span> TEST ENVIRONMENT</div>
+    </header>
 
+    <main class="page">
+      <section class="hero">
+        <div class="eyebrow"><span class="eyebrow-line"></span> AGENT PLAYGROUND</div>
+        <h1>Test your agents.<br><span>One conversation at a time.</span></h1>
+        <p class="lede">Switch between your Sarvam voice agents, start a call, and test each conversation independently.</p>
+      </section>
+
+      <section class="checks-panel" aria-labelledby="checks-title">
+        <div class="section-heading"><div><span class="section-kicker">ENVIRONMENT</span><h2 id="checks-title">Setup checks</h2></div><span class="subtle-label">LIVE DIAGNOSTICS</span></div>
+        <ul id="checks" class="check-list"></ul>
+      </section>
+
+      <section class="workspace" aria-label="Agent workspace">
+        <div class="workspace-head">
+          <div><span class="section-kicker">YOUR WORKSPACE</span><h2>Agent channels</h2></div>
+          <span class="channel-count" id="channel-count">2 CHANNELS</span>
+        </div>
+        <div id="agents" class="agents"></div>
+      </section>
+
+      <footer class="foot"><span>Built for testing</span><span>Edit agent IDs and names in <code>config.js</code></span></footer>
+    </main>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="https://unpkg.com/sarvam-convai-embed"></script>
+  <script src="main.js"></script>
+</body>
+</html>
